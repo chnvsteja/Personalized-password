@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalized Password Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'background': '#f0f2f5',
+              'surface': '#ffffff',
+              'primary': '#3b82f6', // blue-500
+              'secondary-text': '#6b7280', // gray-500
+              'primary-text': '#1f2937', // gray-800
+              'border-color': '#d1d5db', // gray-300
+              'input-bg': '#f9fafb', // gray-50
+              'strength-weak': '#ef4444', // red-500
+              'strength-medium': '#f97316', // orange-500
+              'strength-strong': '#22c55e', // green-500
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-primary-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
